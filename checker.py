@@ -6,7 +6,7 @@ while True:
     print("create/check/quit?")
     req = input()
     if req == "create":
-        fin = open("C:/code/in.txt", 'w')
+        fin = open("in.txt", 'w')
         fin.write("800\n")
         for i in range(800):
             fin.write("300\n")
@@ -19,14 +19,14 @@ while True:
             srt = input("shell/heap/quick/intro/bfs?\n").lower()
         subprocess.run([srt + '.exe', '-o', srt + '.o'])
         if srt == 'bfs':
-            fot = open("C:/code/outbfs.txt", 'r')
+            fot = open("outbfs.txt", 'r')
             # print([k[:-1] for k in fot.readlines()], bfs)
             if [k[:-1] for k in fot.readlines()] == bfs:
                 print("CORRECT!")
                 continue
             print("WRONG!")
             continue
-        fot = open("C:/code/out.txt", 'r')
+        fot = open("out.txt", 'r')
         orig = []
         arr = []
         time = []
